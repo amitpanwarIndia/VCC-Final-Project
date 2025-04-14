@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: digit-api
-        image: gcr.io/digit-gcp-project-id/digit-api:latest  # Update this to your image location
+        image: gcr.io/vcc-final-project-456615/digit-api:latest  # Update this to your image location
         ports:
         - containerPort: 5000
         resources:

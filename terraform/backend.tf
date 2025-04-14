@@ -1,4 +1,6 @@
 terraform {
-  backend "s3" {
+  backend "gcs" {
+    bucket  = "vcc-terraform-state"
+    prefix  = "terraform/state"
   }
 }

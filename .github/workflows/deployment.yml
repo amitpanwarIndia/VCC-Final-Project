@@ -22,6 +22,11 @@ jobs:
       - name: Configure Docker for GCR
         run: gcloud auth configure-docker
 
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
@@ -32,11 +37,6 @@ jobs:
         uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.5.5
-
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v1
-        with:
-          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
 
       - name: Terraform Init
         run: terraform init

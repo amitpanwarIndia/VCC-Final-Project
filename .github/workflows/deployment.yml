@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+env:
+  IMAGE_REPO: gcr.io/vcc-final-project-456615/digit-api
+
 jobs:
   terraform:
     name: Terraform - Build Google Cloud Cluster

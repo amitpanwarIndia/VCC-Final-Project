@@ -4,7 +4,7 @@ This repository is made for VCC Final project and ex.py is based upon plot_digit
 
 It has virtual env setup, python and wsl on local environment.
 
-Trigger 1234
+Trigger 12345
 
 how to setup: pip install venv
 

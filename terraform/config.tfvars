@@ -1,3 +1,3 @@
 bucket = "vcc-terraform-state"
-region = "asia-south2"
+region = "Asia-South2"
 key = "vcc-terraform.tfstate"

@@ -29,7 +29,9 @@ resource "google_container_node_pool" "primary_nodes" {
   }
 
   node_config {
-    machine_type = "e2-medium"
+    machine_type = "e2-small"
+    disk_size_gb = 5
+    disk_type    = "pd-standard"
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform",
     ]

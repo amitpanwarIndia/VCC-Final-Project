@@ -39,7 +39,7 @@ jobs:
           terraform_version: 1.5.5
 
       - name: Terraform Init
-        run: terraform init -backend-config="config.tfvars"
+        run: terraform init
         working-directory: terraform/
 
       - name: Terraform Plan

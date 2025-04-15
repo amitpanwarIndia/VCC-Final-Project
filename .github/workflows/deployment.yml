@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ env.IMAGE_REPO }}:${{ github.sha }}
+          tags: ${{ env.IMAGE_REPO }}:${{ github.sha }},${{ env.IMAGE_REPO }}:latest
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
